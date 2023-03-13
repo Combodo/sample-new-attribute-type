@@ -1,0 +1,16 @@
+{
+  "config": {
+    "classmap-authoritative": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Combodo\\iTop\\Extension\\SampleNewAttributeType\\": "src"
+    }
+  },
+  "name": "combodo/sample-new-attribute-type",
+  "type": "itop-extension",
+  "description": "Sample: New attribute type",
+  "require": {
+    "composer-runtime-api": "^2.0"
+  }
+}
