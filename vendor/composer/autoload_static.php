@@ -21,8 +21,11 @@ class ComposerStaticInit1fd225871aab955f2c461179b7a9b36d
     );
 
     public static $classMap = array (
+        'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Form\\Field\\StringCustomField' => __DIR__ . '/../..' . '/src/Form/Field/StringCustomField.php',
         'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Bootstrap\\BsOverloadExistingFieldRendererMappings' => __DIR__ . '/../..' . '/src/Renderer/Bootstrap/BsOverloadExistingFieldRendererMappings.php',
+        'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Bootstrap\\FieldRenderer\\AbstractCustomBsFieldRenderer' => __DIR__ . '/../..' . '/src/Renderer/Bootstrap/FieldRenderer/AbstractCustomBsFieldRenderer.php',
         'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Bootstrap\\FieldRenderer\\DateTimeFieldRenderer' => __DIR__ . '/../..' . '/src/Renderer/Bootstrap/FieldRenderer/DateTimeFieldRenderer.php',
+        'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Bootstrap\\FieldRenderer\\StringCustomFieldRenderer' => __DIR__ . '/../..' . '/src/Renderer/Bootstrap/FieldRenderer/StringCustomFieldRenderer.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 

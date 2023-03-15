@@ -6,6 +6,6 @@
 
 namespace Combodo\iTop\Extension\SampleNewAttributeType\Renderer\Bootstrap\FieldRenderer;
 
-class DateTimeFieldRenderer extends AbstractCustomBsFieldRenderer
+class StringCustomFieldRenderer extends AbstractCustomBsFieldRenderer
 {
 }

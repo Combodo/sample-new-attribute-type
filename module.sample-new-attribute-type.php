@@ -17,6 +17,7 @@ SetupWebPage::AddModule(
 		'dependencies' => array(
 			'itop-structure/3.1.0',
 			'itop-portal/3.1.0',
+			'itop-tickets/3.1.0',
 		),
 		'mandatory' => false,
 		'visible' => true,
@@ -26,7 +27,7 @@ SetupWebPage::AddModule(
 		'datamodel' => array(
 			'vendor/autoload.php',
 			// Attributes definitions must be explicitly loaded (and not have a namespace)
-			'src/AttributeDefinition/AttributeStringExtended.php',
+			'src/AttributeDefinition/AttributeStringCustomField.php',
 		),
 		'webservice' => array(
 			

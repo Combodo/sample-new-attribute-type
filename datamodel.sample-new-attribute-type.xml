@@ -1,49 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.1">
-<!--	<meta>-->
-<!--      <attribute_definitions>-->
-<!--        <attribute_definition id="AttributeStringExtended" _delta="define_if_not_exists">-->
-<!--          <properties>-->
-<!--            <property id="sql"/>-->
-<!--            <property id="default_value"/>-->
-<!--            <property id="is_null_allowed"/>-->
-<!--            <property id="allowed_values"/>-->
-<!--            <property id="depends_on"/>-->
-<!--          </properties>-->
-<!--        </attribute_definition>-->
-<!--      </attribute_definitions>-->
-<!--  </meta>-->
-<!--  <classes>-->
-<!--    <class id="Person" _delta="must_exist">-->
-<!--      <fields>-->
-<!--        <field id="string_extended" xsi:type="AttributeStringExtended" _delta="define">-->
-<!--          <sql>string_extended</sql>-->
-<!--          <is_null_allowed>true</is_null_allowed>-->
-<!--          <default_value/>-->
-<!--        </field>-->
-<!--      </fields>-->
-<!--      <methods/>-->
-<!--      <presentation>-->
-<!--        <details>-->
-<!--          <items>-->
-<!--            <item id="string_extended" _delta="define">-->
-<!--              <rank>999</rank>-->
-<!--            </item>-->
-<!--          </items>-->
-<!--        </details>-->
-<!--      </presentation>-->
-<!--    </class>-->
-<!--  </classes>-->
-<!--  <module_designs>-->
-<!--    <module_design id="itop-portal" _delta="must_exist">-->
-<!--      <forms>-->
-<!--        <form id="person-view" _delta="must_exist">-->
-<!--          <class>Person</class>-->
-<!--          <fields>-->
-<!--            <field id="string_extended" _delta="define"/>-->
-<!--          </fields>-->
-<!--        </form>-->
-<!--      </forms>-->
-<!--    </module_design>-->
-<!--  </module_designs>-->
+  <classes>
+    <class id="Ticket" _delta="must_exist">
+      <fields>
+        <field id="demo_stringcustomfield" xsi:type="AttributeStringCustomField" _delta="define">
+          <sql>demo_stringcustomfield</sql>
+          <default_value/>
+          <is_null_allowed>true</is_null_allowed>
+        </field>
+      </fields>
+    </class>
+  </classes>
+  <module_designs>
+    <module_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="itop-portal" xsi:type="portal" _delta="must_exist">
+      <forms>
+        <form id="ticket-create" _delta="must_exist">
+          <twig _delta="redefine">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form_field" data-field-id="service_id" data-field-flags="mandatory">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form_field" data-field-id="servicesubcategory_id" data-field-flags="mandatory">
+                </div>
+              </div>
+            </div>
+            <div id="service_details_placeholder">
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form_field" data-field-id="impact">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form_field" data-field-id="urgency">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="form_field" data-field-id="title">
+              </div>
+              <div class="form_field" data-field-id="description">
+              </div>
+              <div class="form_field" data-field-id="demo_stringcustomfield">
+              </div>
+              <div class="form_field" data-field-id="contacts_list">
+              </div>
+            </div>
+          </twig>
+        </form>
+      </forms>
+    </module_design>
+  </module_designs>
+  <!--	<meta>-->
+  <!--      <attribute_definitions>-->
+  <!--        <attribute_definition id="AttributeStringExtended" _delta="define_if_not_exists">-->
+  <!--          <properties>-->
+  <!--            <property id="sql"/>-->
+  <!--            <property id="default_value"/>-->
+  <!--            <property id="is_null_allowed"/>-->
+  <!--            <property id="allowed_values"/>-->
+  <!--            <property id="depends_on"/>-->
+  <!--          </properties>-->
+  <!--        </attribute_definition>-->
+  <!--      </attribute_definitions>-->
+  <!--  </meta>-->
+  <!--  <classes>-->
+  <!--    <class id="Person" _delta="must_exist">-->
+  <!--      <fields>-->
+  <!--        <field id="string_extended" xsi:type="AttributeStringExtended" _delta="define">-->
+  <!--          <sql>string_extended</sql>-->
+  <!--          <is_null_allowed>true</is_null_allowed>-->
+  <!--          <default_value/>-->
+  <!--        </field>-->
+  <!--      </fields>-->
+  <!--      <methods/>-->
+  <!--      <presentation>-->
+  <!--        <details>-->
+  <!--          <items>-->
+  <!--            <item id="string_extended" _delta="define">-->
+  <!--              <rank>999</rank>-->
+  <!--            </item>-->
+  <!--          </items>-->
+  <!--        </details>-->
+  <!--      </presentation>-->
+  <!--    </class>-->
+  <!--  </classes>-->
+  <!--  <module_designs>-->
+  <!--    <module_design id="itop-portal" _delta="must_exist">-->
+  <!--      <forms>-->
+  <!--        <form id="person-view" _delta="must_exist">-->
+  <!--          <class>Person</class>-->
+  <!--          <fields>-->
+  <!--            <field id="string_extended" _delta="define"/>-->
+  <!--          </fields>-->
+  <!--        </form>-->
+  <!--      </forms>-->
+  <!--    </module_design>-->
+  <!--  </module_designs>-->
 </itop_design>
