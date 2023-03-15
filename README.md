@@ -1,3 +1,5 @@
-Sample: New attribute type
+This module is a demonstrator for the new field rendering extensibility added in iTop 3.1.0 (N°6041 for the user portal, N°6042 for the admin console).
 
-WIP: This module will show how to define a new attribute type and how to register it so it can be used in both the backoffice and the portal with a custom view / edit rendering.
+What it does : 
+
+* change DateTimeField renderer to a custom DateTimeFieldRenderer
