@@ -28,6 +28,7 @@ SetupWebPage::AddModule(
 			'vendor/autoload.php',
 			// Attributes definitions must be explicitly loaded (and not have a namespace)
 			'src/AttributeDefinition/AttributeStringCustomField.php',
+			'src/AttributeDefinition/AttributeStringMaxLength.php',
 		),
 		'webservice' => array(
 			

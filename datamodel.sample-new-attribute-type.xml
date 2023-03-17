@@ -8,6 +8,12 @@
           <default_value/>
           <is_null_allowed>true</is_null_allowed>
         </field>
+        <field id="demo_stringmaxlength" xsi:type="AttributeStringMaxLength" _delta="define">
+          <sql>demo_stringmaxlength</sql>
+          <default_value>toto</default_value>
+          <is_null_allowed>true</is_null_allowed>
+          <max_length>2</max_length>
+        </field>
       </fields>
     </class>
   </classes>
@@ -45,6 +51,8 @@
               </div>
               <div class="form_field" data-field-id="demo_stringcustomfield">
               </div>
+              <div class="form_field" data-field-id="demo_stringmaxlength">
+              </div>
               <div class="form_field" data-field-id="contacts_list">
               </div>
             </div>
@@ -53,50 +61,20 @@
       </forms>
     </module_design>
   </module_designs>
-  <!--	<meta>-->
-  <!--      <attribute_definitions>-->
-  <!--        <attribute_definition id="AttributeStringExtended" _delta="define_if_not_exists">-->
-  <!--          <properties>-->
-  <!--            <property id="sql"/>-->
-  <!--            <property id="default_value"/>-->
-  <!--            <property id="is_null_allowed"/>-->
-  <!--            <property id="allowed_values"/>-->
-  <!--            <property id="depends_on"/>-->
-  <!--          </properties>-->
-  <!--        </attribute_definition>-->
-  <!--      </attribute_definitions>-->
-  <!--  </meta>-->
-  <!--  <classes>-->
-  <!--    <class id="Person" _delta="must_exist">-->
-  <!--      <fields>-->
-  <!--        <field id="string_extended" xsi:type="AttributeStringExtended" _delta="define">-->
-  <!--          <sql>string_extended</sql>-->
-  <!--          <is_null_allowed>true</is_null_allowed>-->
-  <!--          <default_value/>-->
-  <!--        </field>-->
-  <!--      </fields>-->
-  <!--      <methods/>-->
-  <!--      <presentation>-->
-  <!--        <details>-->
-  <!--          <items>-->
-  <!--            <item id="string_extended" _delta="define">-->
-  <!--              <rank>999</rank>-->
-  <!--            </item>-->
-  <!--          </items>-->
-  <!--        </details>-->
-  <!--      </presentation>-->
-  <!--    </class>-->
-  <!--  </classes>-->
-  <!--  <module_designs>-->
-  <!--    <module_design id="itop-portal" _delta="must_exist">-->
-  <!--      <forms>-->
-  <!--        <form id="person-view" _delta="must_exist">-->
-  <!--          <class>Person</class>-->
-  <!--          <fields>-->
-  <!--            <field id="string_extended" _delta="define"/>-->
-  <!--          </fields>-->
-  <!--        </form>-->
-  <!--      </forms>-->
-  <!--    </module_design>-->
-  <!--  </module_designs>-->
+  <meta>
+    <attribute_definitions>
+      <attribute_definition id="AttributeStringMaxLength" _delta="define">
+        <properties>
+          <property id="sql"/>
+          <property id="default_value"/>
+          <property id="is_null_allowed"/>
+          <property id="max_length">
+            <php_param>max_length</php_param>
+            <mandatory>true</mandatory>
+            <type>number</type>
+          </property>
+        </properties>
+      </attribute_definition>
+    </attribute_definitions>
+  </meta>
 </itop_design>
