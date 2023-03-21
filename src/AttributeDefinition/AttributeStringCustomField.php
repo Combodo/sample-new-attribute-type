@@ -12,4 +12,9 @@ class AttributeStringCustomField extends AttributeString
 	{
 		return StringCustomField::class;
 	}
+
+	public function GetEditClass()
+	{
+		return 'FormField';
+	}
 }

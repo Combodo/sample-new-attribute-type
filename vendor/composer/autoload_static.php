@@ -26,6 +26,10 @@ class ComposerStaticInit1fd225871aab955f2c461179b7a9b36d
         'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Bootstrap\\FieldRenderer\\AbstractCustomBsFieldRenderer' => __DIR__ . '/../..' . '/src/Renderer/Bootstrap/FieldRenderer/AbstractCustomBsFieldRenderer.php',
         'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Bootstrap\\FieldRenderer\\DateTimeFieldRenderer' => __DIR__ . '/../..' . '/src/Renderer/Bootstrap/FieldRenderer/DateTimeFieldRenderer.php',
         'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Bootstrap\\FieldRenderer\\StringCustomFieldRenderer' => __DIR__ . '/../..' . '/src/Renderer/Bootstrap/FieldRenderer/StringCustomFieldRenderer.php',
+        'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Console\\ConsoleOverloadExistingFieldRendererMappings' => __DIR__ . '/../..' . '/src/Renderer/Console/ConsoleOverloadExistingFieldRendererMappings.php',
+        'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Console\\FieldRenderer\\DateTimeFieldRenderer' => __DIR__ . '/../..' . '/src/Renderer/Console/FieldRenderer/DateTimeFieldRenderer.php',
+        'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Console\\FieldRenderer\\StringCustomFieldRenderer' => __DIR__ . '/../..' . '/src/Renderer/Console/FieldRenderer/StringCustomFieldRenderer.php',
+        'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\CustomFieldRendererHelper' => __DIR__ . '/../..' . '/src/Renderer/CustomFieldRendererHelper.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 

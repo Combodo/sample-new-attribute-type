@@ -11,5 +11,9 @@ return array(
     'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Bootstrap\\FieldRenderer\\AbstractCustomBsFieldRenderer' => $baseDir . '/src/Renderer/Bootstrap/FieldRenderer/AbstractCustomBsFieldRenderer.php',
     'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Bootstrap\\FieldRenderer\\DateTimeFieldRenderer' => $baseDir . '/src/Renderer/Bootstrap/FieldRenderer/DateTimeFieldRenderer.php',
     'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Bootstrap\\FieldRenderer\\StringCustomFieldRenderer' => $baseDir . '/src/Renderer/Bootstrap/FieldRenderer/StringCustomFieldRenderer.php',
+    'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Console\\ConsoleOverloadExistingFieldRendererMappings' => $baseDir . '/src/Renderer/Console/ConsoleOverloadExistingFieldRendererMappings.php',
+    'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Console\\FieldRenderer\\DateTimeFieldRenderer' => $baseDir . '/src/Renderer/Console/FieldRenderer/DateTimeFieldRenderer.php',
+    'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\Console\\FieldRenderer\\StringCustomFieldRenderer' => $baseDir . '/src/Renderer/Console/FieldRenderer/StringCustomFieldRenderer.php',
+    'Combodo\\iTop\\Extension\\SampleNewAttributeType\\Renderer\\CustomFieldRendererHelper' => $baseDir . '/src/Renderer/CustomFieldRendererHelper.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );

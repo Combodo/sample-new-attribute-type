@@ -17,7 +17,7 @@ SetupWebPage::AddModule(
 		'dependencies' => array(
 			'itop-structure/3.1.0',
 			'itop-portal/3.1.0',
-			'itop-tickets/3.1.0',
+			'itop-request-mgmt/3.1.0',
 		),
 		'mandatory' => false,
 		'visible' => true,

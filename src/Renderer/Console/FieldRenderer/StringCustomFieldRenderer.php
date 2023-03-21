@@ -4,17 +4,17 @@
  * @license     http://opensource.org/licenses/AGPL-3.0
  */
 
-namespace Combodo\iTop\Extension\SampleNewAttributeType\Renderer\Bootstrap\FieldRenderer;
+namespace Combodo\iTop\Extension\SampleNewAttributeType\Renderer\Console\FieldRenderer;
 
 use Combodo\iTop\Extension\SampleNewAttributeType\Renderer\CustomFieldRendererHelper;
-use Combodo\iTop\Renderer\Bootstrap\FieldRenderer\BsFieldRenderer;
+use Combodo\iTop\Renderer\FieldRenderer;
 
-class AbstractCustomBsFieldRenderer extends BsFieldRenderer
+class StringCustomFieldRenderer extends FieldRenderer
 {
 	public function Render()
 	{
-		$oOutput = parent::Render();
 
+		$oOutput = parent::Render();
 		CustomFieldRendererHelper::AddDebugInfoToOutput($oOutput, $this->oField);
 
 		return $oOutput;

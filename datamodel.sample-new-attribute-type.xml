@@ -8,13 +8,37 @@
           <default_value/>
           <is_null_allowed>true</is_null_allowed>
         </field>
-        <field id="demo_stringmaxlength" xsi:type="AttributeStringMaxLength" _delta="define">
-          <sql>demo_stringmaxlength</sql>
-          <default_value>toto</default_value>
-          <is_null_allowed>true</is_null_allowed>
-          <max_length>2</max_length>
-        </field>
+        <!--        <field id="demo_stringmaxlength" xsi:type="AttributeStringMaxLength" _delta="define">-->
+        <!--          <sql>demo_stringmaxlength</sql>-->
+        <!--          <default_value>toto</default_value>-->
+        <!--          <is_null_allowed>true</is_null_allowed>-->
+        <!--          <max_length>2</max_length>-->
+        <!--        </field>-->
       </fields>
+      <presentation>
+        <details>
+          <items>
+            <item id="demo_stringcustomfield" _delta="define">
+              <rank>9999</rank>
+            </item>
+          </items>
+        </details>
+      </presentation>
+    </class>
+    <class id="UserRequest" _delta="must_exist">
+      <presentation>
+        <details>
+          <items>
+            <item id="col:col1">
+              <items>
+                <item id="demo_stringcustomfield" _delta="define">
+                  <rank>9999</rank>
+                </item>
+              </items>
+            </item>
+          </items>
+        </details>
+      </presentation>
     </class>
   </classes>
   <module_designs>

@@ -15,8 +15,15 @@ class AttributeStringMaxLength extends AttributeString
 		];
 	}
 
-	public function GetValidationPattern() {
+	public function GetValidationPattern()
+	{
 		$iMaxLength = $this->Get('max_length');
+
 		return '^.{,'.$iMaxLength.'}$';
+	}
+
+	public function GetEditClass()
+	{
+		return 'FormField';
 	}
 }
