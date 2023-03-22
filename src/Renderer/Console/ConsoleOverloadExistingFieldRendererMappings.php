@@ -7,7 +7,6 @@
 namespace Combodo\iTop\Extension\SampleNewAttributeType\Renderer\Console;
 
 use Combodo\iTop\Extension\SampleNewAttributeType\Form\Field\StringCustomField;
-use Combodo\iTop\Extension\SampleNewAttributeType\Renderer\Console\FieldRenderer\DateTimeFieldRenderer;
 use Combodo\iTop\Extension\SampleNewAttributeType\Renderer\Console\FieldRenderer\StringCustomFieldRenderer;
 use Combodo\iTop\Renderer\Console\ConsoleFormRenderer;
 use iFieldRendererMappingsExtension;
