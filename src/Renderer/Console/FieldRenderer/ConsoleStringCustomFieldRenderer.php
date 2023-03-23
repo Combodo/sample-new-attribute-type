@@ -14,7 +14,7 @@ use Combodo\iTop\Extension\SampleNewAttributeType\Form\Field\StringCustomField;
 use Combodo\iTop\Renderer\BlockRenderer;
 use Combodo\iTop\Renderer\FieldRenderer;
 
-class StringCustomFieldRenderer extends FieldRenderer
+class ConsoleStringCustomFieldRenderer extends FieldRenderer
 {
 	public function Render()
 	{

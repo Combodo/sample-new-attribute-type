@@ -7,7 +7,7 @@
 namespace Combodo\iTop\Extension\SampleNewAttributeType\Renderer\Console;
 
 use Combodo\iTop\Extension\SampleNewAttributeType\Form\Field\StringCustomField;
-use Combodo\iTop\Extension\SampleNewAttributeType\Renderer\Console\FieldRenderer\StringCustomFieldRenderer;
+use Combodo\iTop\Extension\SampleNewAttributeType\Renderer\Console\FieldRenderer\ConsoleStringCustomFieldRenderer;
 use Combodo\iTop\Renderer\Console\ConsoleFormRenderer;
 use iFieldRendererMappingsExtension;
 
@@ -24,9 +24,9 @@ class ConsoleOverloadExistingFieldRendererMappings implements iFieldRendererMapp
 	{
 		return [
 			[
-				'field' => StringCustomField::class,
-				'form_renderer' => ConsoleFormRenderer::class,
-				'field_renderer' => StringCustomFieldRenderer::class,
+				'field'          => StringCustomField::class,
+				'form_renderer'  => ConsoleFormRenderer::class,
+				'field_renderer' => ConsoleStringCustomFieldRenderer::class,
 			],
 		];
 	}
