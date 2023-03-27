@@ -60,6 +60,4 @@ class AttributeStringCustomField extends AttributeString
 
 		return $sStringValue;
 	}
-
-
 }
