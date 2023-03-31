@@ -19,6 +19,11 @@ class ConsoleStringCustomFieldRenderer extends FieldRenderer
 	public function Render()
 	{
 		$oOutput = parent::Render();
+
+		if ($this->oField->GetHidden()) {
+			return $oOutput;
+		}
+
 		$sFieldClass = StringCustomField::class;
 
 		$oBlock = FieldUIBlockFactory::MakeStandard($this->oField->GetLabel());
