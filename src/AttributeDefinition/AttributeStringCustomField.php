@@ -60,4 +60,11 @@ class AttributeStringCustomField extends AttributeString
 
 		return $sStringValue;
 	}
+
+	public function GetPrerequisiteAttributes($sClass = null)
+	{
+		// Overload here so that the field will be refreshed in the console
+		return parent::GetPrerequisiteAttributes($sClass);
+	}
+
 }
