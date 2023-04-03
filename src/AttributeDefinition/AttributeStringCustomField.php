@@ -13,6 +13,17 @@ class AttributeStringCustomField extends AttributeString
 		return StringCustomField::class;
 	}
 
+	public function MakeFormField(DBObject $oObject, $oFormField = null)
+	{
+		$oFormField = parent::MakeFormField($oObject, $oFormField);
+
+		if ($oObject->Get('urgency') === '4') { // 4 for 'low'
+			$oFormField->SetHidden(true);
+		}
+
+		return $oFormField;
+	}
+
 	public function GetEditClass()
 	{
 		return 'FormField';
@@ -64,7 +75,7 @@ class AttributeStringCustomField extends AttributeString
 	public function GetPrerequisiteAttributes($sClass = null)
 	{
 		// Overload here so that the field will be refreshed in the console
-		return parent::GetPrerequisiteAttributes($sClass);
+		return ['urgency'];
 	}
 
 }

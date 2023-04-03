@@ -15,6 +15,10 @@ class AbstractCustomBsFieldRenderer extends BsFieldRenderer
 	{
 		$oOutput = parent::Render();
 
+		if ($this->oField->GetHidden() === true) {
+			return $oOutput;
+		}
+
 		CustomFieldRendererHelper::AddDebugInfoToOutput($oOutput, $this->oField);
 
 		return $oOutput;
