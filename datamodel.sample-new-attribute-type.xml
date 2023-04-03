@@ -75,8 +75,8 @@
               </div>
               <div class="form_field" data-field-id="demo_stringcustomfield">
               </div>
-              <div class="form_field" data-field-id="demo_stringmaxlength">
-              </div>
+              <!--              <div class="form_field" data-field-id="demo_stringmaxlength">-->
+              <!--              </div>-->
               <div class="form_field" data-field-id="contacts_list">
               </div>
             </div>
