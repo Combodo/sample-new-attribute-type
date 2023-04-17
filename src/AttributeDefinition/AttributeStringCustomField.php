@@ -17,6 +17,9 @@ class AttributeStringCustomField extends AttributeString
 	{
 		$oFormField = parent::MakeFormField($oObject, $oFormField);
 
+		// Handling hide/show here
+		// Ideally we should override in XML the DBObject::GetInitialAttributeFlags/GetAttributeFlags methods
+		// But this isn't working in the admin console as only the field value part is refreshed (see N°733)
 		if ($oObject->Get('urgency') === '4') { // 4 for 'low'
 			$oFormField->SetHidden(true);
 		}
@@ -71,11 +74,4 @@ class AttributeStringCustomField extends AttributeString
 
 		return $sStringValue;
 	}
-
-	public function GetPrerequisiteAttributes($sClass = null)
-	{
-		// Overload here so that the field will be refreshed in the console
-		return ['urgency'];
-	}
-
 }
