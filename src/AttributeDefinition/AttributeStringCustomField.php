@@ -20,11 +20,36 @@ class AttributeStringCustomField extends AttributeString
 		// Handling hide/show here
 		// Ideally we should override in XML the DBObject::GetInitialAttributeFlags/GetAttributeFlags methods
 		// But this isn't working in the admin console as only the field value part is refreshed (see N°733)
+		// Note also that each renderer will need to handle the field hidden property !
 		if ($oObject->Get('urgency') === '4') { // 4 for 'low'
 			$oFormField->SetHidden(true);
 		}
 
 		return $oFormField;
+	}
+
+	public function GetForm(DBObject $oHostObject, ?string $sFormPrefix = null): \Combodo\iTop\Form\Form
+	{
+		$sAttCode = $this->GetCode();
+
+		$sFormId = 'ff_'.$sAttCode;
+		if (utils::IsNotNullOrEmptyString($sFormPrefix)) {
+			$sFormId = $sFormPrefix.$sFormId;
+		}
+
+		$oForm = new Combodo\iTop\Form\Form($sFormId);
+
+		// creating manually the field, as we need a specific id for the JS to work (send data back to the server)
+		$sFormFieldClass = $this::GetFormFieldClass();
+		$oAttDefField = new $sFormFieldClass($sAttCode.'_field');
+
+		$this->MakeFormField($oHostObject, $oAttDefField);
+		// Remove label generated in MakeFormField : the current method should return the field only, as the label is already generated in the caller GetBareProperties()
+		$oAttDefField->SetLabel('');
+
+		$oForm->AddField($oAttDefField);
+
+		return $oForm;
 	}
 
 	public function GetEditClass()
