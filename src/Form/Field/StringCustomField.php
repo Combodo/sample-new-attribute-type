@@ -7,9 +7,9 @@
 
 namespace Combodo\iTop\Extension\SampleNewAttributeType\Form\Field;
 
-use Combodo\iTop\Form\Field\TextField;
+use Combodo\iTop\Form\Field\SubFormField;
 
-class StringCustomField extends TextField
+class StringCustomField extends SubFormField
 {
 
 }

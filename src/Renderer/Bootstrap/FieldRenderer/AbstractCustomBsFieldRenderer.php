@@ -15,7 +15,7 @@ class AbstractCustomBsFieldRenderer extends BsFieldRenderer
 	{
 		$oOutput = parent::Render();
 
-		if ($this->oField->GetHidden() === true) {
+		if (false === $this->oField->GetForm()->HasVisibleFields()) {
 			// N°6135 warning this isn't working in the user portal :( After js refresh the field is displayed again, without calling this renderer (!)
 			return $oOutput;
 		}

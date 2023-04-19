@@ -7,9 +7,7 @@
 namespace Combodo\iTop\Extension\SampleNewAttributeType\Renderer\Bootstrap;
 
 use Combodo\iTop\Extension\SampleNewAttributeType\Form\Field\StringCustomField;
-use Combodo\iTop\Extension\SampleNewAttributeType\Renderer\Bootstrap\FieldRenderer\BsDateTimeFieldRenderer;
 use Combodo\iTop\Extension\SampleNewAttributeType\Renderer\Bootstrap\FieldRenderer\BsStringCustomFieldRenderer;
-use Combodo\iTop\Form\Field\DateTimeField;
 use Combodo\iTop\Renderer\Bootstrap\BsFormRenderer;
 use iFieldRendererMappingsExtension;
 
@@ -30,11 +28,6 @@ class BsOverloadExistingFieldRendererMappings implements iFieldRendererMappingsE
 	public static function RegisterSupportedFields(): array
 	{
 		return [
-			[
-				'field'          => DateTimeField::class,
-				'form_renderer'  => BsFormRenderer::class,
-				'field_renderer' => BsDateTimeFieldRenderer::class,
-			],
 			[
 				'field'          => StringCustomField::class,
 				'form_renderer'  => BsFormRenderer::class,
